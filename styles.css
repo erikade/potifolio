@@ -1,0 +1,111 @@
+/* Importa a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #000, #1c1c1c);
+    color: #9370DB;
+    padding: 2em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header:hover {
+    background-color: #111;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #9370DB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 8em 2em;
+    margin: 8em auto;
+    max-width: 800px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.section h2 {
+    border-bottom: 3px solid #9370DB;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #9370DB;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #000;
+    color: #9370DB;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+h1, h2 {
+    color: #9370DB;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .section {
+        padding: 4em 1em;
+    }
+}
